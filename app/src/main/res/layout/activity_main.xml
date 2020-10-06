@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainActivity">
+    
+    <EditText
+        android:id="@+id/calculation"
+        android:layout_width="match_parent"
+        android:layout_height="177dp"
+        android:textAlignment="textEnd"
+        android:textSize="56sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <EditText
+        android:id="@+id/result"
+        android:layout_width="match_parent"
+        android:layout_height="177dp"
+        android:textAlignment="textEnd"
+        android:textSize="56sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/calculation"
+        android:autofillHints="" />
+
+
+    <Button
+        android:id="@+id/b7"
+        android:layout_width="103dp"
+        android:layout_height="103dp"
+        android:text="7"
+        android:background="@drawable/round_button"
+        app:layout_constraintTop_toBottomOf="@id/result"
+        app:layout_constraintLeft_toLeftOf="parent"
+
+        />
+    <Button
+        android:id="@+id/b8"
+        android:layout_width="103dp"
+        android:layout_height="103dp"
+        android:text="8"
+        android:background="@drawable/round_button"
+        app:layout_constraintTop_toBottomOf="@id/result"
+        app:layout_constraintLeft_toRightOf="@id/b7"
+        />
+
+    <Button
+        android:id="@+id/b9"
+        android:layout_width="103dp"
+        android:layout_height="103dp"
+        android:text="9"
+        android:background="@drawable/round_button"
+        app:layout_constraintTop_toBottomOf="@id/result"
+        app:layout_constraintLeft_toRightOf="@id/b8"
+        />
+
+
+    <Button
+        android:id="@+id/division"
+        android:layout_width="103dp"
+        android:layout_height="103dp"
+        android:text="/"
+        android:background="@drawable/round_button"
+        app:layout_constraintLeft_toRightOf="@id/b9"
+        app:layout_constraintTop_toBottomOf="@id/result" />
+
+    <Button
+        android:id="@+id/b4"
+        android:layout_width="103dp"
+        android:layout_height="103dp"
+        android:text="4"
+        android:background="@drawable/round_button"
+        app:layout_constraintTop_toBottomOf="@id/b7"
+        app:layout_constraintLeft_toLeftOf="parent"
+
+        />
+    <Button
+        android:id="@+id/b5"
+        android:layout_width="103dp"
+        android:layout_height="103dp"
+        android:text="5"
+        android:background="@drawable/round_button"
+        app:layout_constraintTop_toBottomOf="@id/b8"
+        app:layout_constraintLeft_toRightOf="@id/b4"
+        />
+
+    <Button
+        android:id="@+id/b6"
+        android:layout_width="103dp"
+        android:layout_height="103dp"
+        android:text="6"
+        android:background="@drawable/round_button"
+        app:layout_constraintTop_toBottomOf="@id/b9"
+        app:layout_constraintLeft_toRightOf="@id/b5"
+        />
+
+    <Button
+        android:id="@+id/multiplication"
+        android:layout_width="103dp"
+        android:layout_height="103dp"
+        android:text="*"
+        android:background="@drawable/round_button"
+        app:layout_constraintTop_toBottomOf="@id/division"
+        app:layout_constraintLeft_toRightOf="@id/b6"
+        />
+
+    <Button
+        android:id="@+id/b1"
+        android:layout_width="103dp"
+        android:layout_height="103dp"
+        android:text="1"
+        android:background="@drawable/round_button"
+        app:layout_constraintTop_toBottomOf="@id/b4"
+        app:layout_constraintLeft_toLeftOf="parent"
+
+        />
+    <Button
+        android:id="@+id/b2"
+        android:layout_width="103dp"
+        android:layout_height="103dp"
+        android:text="2"
+        android:background="@drawable/round_button"
+        app:layout_constraintTop_toBottomOf="@id/b5"
+        app:layout_constraintLeft_toRightOf="@id/b1"
+        />
+
+    <Button
+        android:id="@+id/b3"
+        android:layout_width="103dp"
+        android:layout_height="103dp"
+        android:text="3"
+        android:background="@drawable/round_button"
+        app:layout_constraintTop_toBottomOf="@id/b6"
+        app:layout_constraintLeft_toRightOf="@id/b2"
+        />
+
+    <Button
+        android:id="@+id/plus"
+        android:layout_width="103dp"
+        android:layout_height="103dp"
+        android:text="+"
+        android:background="@drawable/round_button"
+        app:layout_constraintTop_toBottomOf="@id/multiplication"
+        app:layout_constraintLeft_toRightOf="@id/b3"
+        />
+
+    <Button
+        android:id="@+id/AC"
+        android:layout_width="103dp"
+        android:layout_height="103dp"
+        android:text="AC"
+        android:background="@drawable/round_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+
+        />
+    <Button
+        android:id="@+id/b0"
+        android:layout_width="103dp"
+        android:layout_height="103dp"
+        android:text="0"
+        android:background="@drawable/round_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/AC"
+        />
+
+    <Button
+        android:id="@+id/equals"
+        android:layout_width="103dp"
+        android:layout_height="103dp"
+        android:text="="
+        android:background="@drawable/round_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/b0"
+        />
+
+    <Button
+        android:id="@+id/minus"
+        android:layout_width="103dp"
+        android:layout_height="103dp"
+        android:text="-"
+        android:background="@drawable/round_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/equals"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>
